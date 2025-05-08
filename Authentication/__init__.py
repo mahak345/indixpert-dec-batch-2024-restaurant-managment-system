@@ -1,6 +1,5 @@
 import json
 import os
-
 USER_FILE = 'users.json'
 
 def init_user_file():

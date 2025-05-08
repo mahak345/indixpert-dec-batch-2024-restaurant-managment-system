@@ -9,7 +9,7 @@ def load_users():
             data = json.load(f)
             return data if isinstance(data, list) else []
     except (json.JSONDecodeError, FileNotFoundError):
-        return []
+         return []
 
 def sign_in():
     print("== Sign In ==")

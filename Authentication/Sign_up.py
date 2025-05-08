@@ -5,7 +5,7 @@ USER_FILE = 'users.json'
 
 def load_users():
     try:
-         with open(USER_FILE, 'r') as f:
+          with open(USER_FILE, 'r') as f:
             data = json.load(f)
             return data if isinstance(data, list) else []
     except (json.JSONDecodeError, FileNotFoundError):
